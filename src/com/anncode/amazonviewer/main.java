@@ -9,12 +9,10 @@ public class main {
 
 
     public static void main(String[] args) {
-        Movie movie = new Movie("Coco", "Animated", (short) 2017);
 
-        movie.showData();
+        Movie movie = new Movie("Coco", "Animation", "Unamed", 120, 2017);
 
-//        showMenu();
-
+        System.out.println(movie);
     }
 
     public static void showMenu() {
