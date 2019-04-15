@@ -11,7 +11,9 @@ public class main {
     public static void main(String[] args) {
         Movie movie = new Movie("Coco", "Animated", (short) 2017);
 
-        showMenu();
+        movie.showData();
+
+//        showMenu();
 
     }
 

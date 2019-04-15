@@ -2,16 +2,22 @@ package com.anncode.amazonviewer.model;
 
 public class Serie {
 
-    int id;
-    String title;
-    String genre;
-    String creator;
-    int duration;
-    short year;
-    boolean viewed;
-    int timeViewed;
+    private int id;
+    private String title;
+    private String genre;
+    private String creator;
+    private int duration;
+    private short year;
+    private boolean viewed;
+    private int timeViewed;
 
     int sessionQuantity;
     //TODO chapters
+
+    public Serie(String title, String genre, int duration) {
+        this.title = title;
+        this.genre = genre;
+        this.duration = duration;
+    }
 
 }
