@@ -6,6 +6,8 @@ public class Film {
     private String genre;
     private String creator;
     private int duration;
+    private short year;
+    private boolean viewed;
 
     public Film(String title, String genre, String creator, int duration) {
         super();
@@ -62,8 +64,5 @@ public class Film {
     public void setViewed(boolean viewed) {
         this.viewed = viewed;
     }
-
-    private short year;
-    private boolean viewed;
 
 }
