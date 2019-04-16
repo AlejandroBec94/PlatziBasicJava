@@ -1,5 +1,7 @@
 package com.anncode.amazonviewer.model;
 
+import java.util.ArrayList;
+
 public class Movie extends Film {
 
     private int id;
@@ -7,7 +9,7 @@ public class Movie extends Film {
 
     public Movie(String title, String genre, String creator, int duration, int year) {
         super(title, genre, creator, duration);
-        setYear((short)year);
+        setYear((short) year);
     }
 
     public int getId() {
@@ -27,6 +29,17 @@ public class Movie extends Film {
         return "Titulo: " + getTitle() +
                 "\nGenero: " + getGenre() +
                 "\nAño: " + getYear();
+    }
+
+    public static ArrayList<Movie> makeMovieList() {
+
+        ArrayList<Movie> movies = new ArrayList();
+
+        for (int i = 1; i <= 5; i++) {
+            movies.add(new Movie("Movie " + i, "Genero " + i, "Bec", 120+i, 2018));
+        }
+        return movies;
+
     }
 
 

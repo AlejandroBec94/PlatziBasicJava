@@ -1,4 +1,4 @@
-package com.anncode.amazonviewer;
+package com.anncode.amazonviewer.collections;
 
 import com.anncode.amazonviewer.model.Chapter;
 
